@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bengal Bites</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Bengal Bites</h1>
+  <p>Welcome to a delicious experience!</p>
+</header>
+
+<nav>
+  <a href="#menu">Menu</a>
+  <a href="#reservation">Reservations</a>
+  <a href="#events">Events</a>
+</nav>
+<div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider round"></span>
+  </label>
+  <span class="toggle-label">Dark Mode</span>
+</div>
+
+<section id="menu" class="menu-section">
+  <h2>Our Menu</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('veg')">Veg 🌱</button>
+    <button onclick="filterMenu('non-veg')">Non-Veg 🍗</button>
+    <button onclick="filterMenu('dessert')">Desserts 🍰</button>
+    <button onclick="filterMenu('drink')">Drinks 🥤</button>
+  </div>
+
+  <div class="menu-grid" id="menu-grid">
+    <div class="menu-card veg">
+      <h3>🍞 Garlic Bread</h3>
+      <p><span class="typed-desc">Toasted bread with garlic & butter</span></p>
+      <span class="price">₹99</span>
+    </div>
+    <div class="menu-card non-veg">
+      <h3>🍗 Chicken Biryani</h3>
+      <p><span class="typed-desc">Spiced chicken with basmati rice</span></p>
+      <span class="price">₹299</span>
+    </div>
+    <div class="menu-card veg">
+      <h3>🧀 Paneer Butter Masala</h3>
+      <p><span class="typed-desc">Creamy cottage cheese curry</span></p>
+      <span class="price">₹249</span>
+    </div>
+    <div class="menu-card veg">
+      <h3>🍝 Spaghetti Alfredo</h3>
+      <p><span class="typed-desc">Creamy pasta with mushrooms</span></p>
+      <span class="price">₹229</span>
+    </div>
+    <div class="menu-card dessert">
+      <h3>🍮 Gulab Jamun</h3>
+      <p><span class="typed-desc">Traditional Indian dessert</span></p>
+      <span class="price">₹89</span>
+    </div>
+    <div class="menu-card dessert">
+      <h3>🍫 Chocolate Brownie</h3>
+      <p><span class="typed-desc">Served with vanilla ice cream</span></p>
+      <span class="price">₹159</span>
+    </div>
+    <div class="menu-card drink">
+      <h3>🍹 Lemon Mint Cooler</h3>
+      <p><span class="typed-desc">Refreshing lemon-mint drink</span></p>
+      <span class="price">₹79</span>
+    </div>
+    <div class="menu-card drink">
+      <h3>☕ Masala Chai</h3>
+      <p><span class="typed-desc">Spiced Indian tea</span></p>
+      <span class="price">₹49</span>
+    </div>
+  </div>
+</section>
+
+
+<section id="reservation">
+  <h2>Make a Reservation</h2>
+  <form id="reservation-form" method="POST" action="/reserve">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="date" name="date" required />
+  <input type="time" name="time" required />
+  <select name="people" required>
+    <option value="">Select No. of People</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4+</option>
+  </select>
+  <textarea name="requests" placeholder="Special Requests"></textarea>
+  <button type="submit">Reserve Now</button>
+</form>
+
+</section>
+
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <div class="event">
+    <h3>Live Jazz Night - July 10</h3>
+    <p>Enjoy a soulful evening with live jazz and fine dining.</p>
+  </div>
+  <div class="event">
+    <h3>Wine Tasting - July 20</h3>
+    <p>Explore premium wines with expert sommeliers.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Bengal Bites. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

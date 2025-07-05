@@ -1,0 +1,17 @@
+{
+  "name": "restaurant-website",
+  "version": "1.0.0",
+  "description": "A restaurant website with menus, reservations, and event details",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}
