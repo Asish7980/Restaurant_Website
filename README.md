@@ -44,8 +44,6 @@ Restaurant_Website/
 └── screenshots/         # screenshots 
 ```
 ## 🖼️ Screenshots
-Place these images in the screenshots/ folder.
-
 ## Header Section
 
 ![Header](screenshots/header.png)
